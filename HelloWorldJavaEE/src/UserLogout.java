@@ -53,12 +53,9 @@ public class UserLogout extends HttpServlet {
   
       
         response.sendRedirect("http://localhost:8090/HelloWorldJavaEE/login.jsp"); 
-	
-        
+	   
     }
 	   
-	
-
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */

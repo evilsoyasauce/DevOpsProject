@@ -20,7 +20,7 @@
 	text-align: center;
 }
 </style>
-<title>Insert title here</title>
+<title>Welcome Page</title>
 </head>
 <body>
 	<div
@@ -31,12 +31,12 @@
 			<h1 class="display-4 font-weight-bold">Welcome</h1>
 			<p class="font-italic mb-0">We sell cheap salmon fish here.
 				Please log in to purchase</p>
-			<br> <a href="<%=request.getContextPath()%>/register.jsp" role="button" class="btn btn-primary px-5">Register</a>
-			<a href="<%=request.getContextPath()%>/login.jsp" role="button" class="btn btn-warning px-5">Login</a>
+			<br> <a href="<%=request.getContextPath()%>/register.jsp" class="registerButton" role="button" class="btn btn-primary px-5">Register</a>
+			<a href="<%=request.getContextPath()%>/login.jsp" class="loginButton" role="button" class="btn btn-warning px-5">Login</a>
 		</div>
 	</div>
 
-	<div class="container py-5">
+	<div id="content" role="contentinfo" class="container py-5">
 		<h2 class="h3 font-weight-bold">Salmon benefits</h2>
 		<div class="row">
 			<div class="col-lg-10 mb-4">

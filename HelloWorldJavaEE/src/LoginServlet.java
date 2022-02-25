@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private String jdbcURL = "jdbc:mysql://localhost:4306/userdetails";
+	private String jdbcURL = "jdbc:mysql://localhost:3306/userdetails";
 	private String jdbcUsername = "root";
 	private String jdbcPassword = "password";
 	private static final String SELECT_USER_BY_EMAIL = "select name,password,email from UserDetails where email =?";

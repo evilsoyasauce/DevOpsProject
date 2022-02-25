@@ -72,7 +72,7 @@ public class UserServlet extends HttpServlet {
 	}
 
 	// Step 1: Prepare list of variables used for database connections
-	private String jdbcURL = "jdbc:mysql://localhost:4306/userdetails";
+	private String jdbcURL = "jdbc:mysql://localhost:3306/userdetails";
 	private String jdbcUsername = "root";
 	private String jdbcPassword = "password";
 

@@ -53,7 +53,7 @@ public class RegisterServlet extends HttpServlet {
 		try {
 		 Class.forName("com.mysql.jdbc.Driver");
 		 Connection con = DriverManager.getConnection(
-		 "jdbc:mysql://localhost:4306/userdetails", "root", "password");
+		 "jdbc:mysql://localhost:3306/userdetails", "root", "password");
 		//Step 4: implement the sql query using prepared statement
 		//(https://docs.oracle.com/javase/tutorial/jdbc/basics/prepared.html)
 		 PreparedStatement ps = con.prepareStatement("insert into USERDETAILS values(?,?,?,?)");
@@ -71,7 +71,7 @@ public class RegisterServlet extends HttpServlet {
 		PrintWriter writer = response.getWriter();
 		writer.println("<h1>" + "You have successfully registered an account!" +
 		"</h1>");
-        response.sendRedirect("http://localhost:8088/HelloWorldJavaEE/login.jsp");
+        response.sendRedirect("http://localhost:8090/HelloWorldJavaEE/login.jsp");
 		writer.close();
 		}
 		}
